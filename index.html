@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>macbookpro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <section class="container py-5">
+        <div class="row align-items-center">
+            <!-- macbook png image -->
+            <div class="col-lg-6 p-3 col-md-6 col-12">
+                <img class="img-fluid" src="images/mac.png" alt="">
+            </div>
+            <!-- other elements -->
+            <div class="col-lg-6 p-5 col-md-6 col-12">
+                <br>
+                <!-- h1 and paragraph -->
+                <div>
+                    <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p>
+                    Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores,
+                    7 core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two 
+                    Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard-US English. <br> 
+                    </p>
+                </div>
+                <h4>Memory</h4>
+                <!-- memory buttons -->
+                <div class="d-flex btn-group">
+                    <button id="eightGB" class="marginRight my-2 btn btn-outline-dark"> 8GB unified memory </button>
+                    <button id="sixteenGB" class="marginRight my-2 btn btn-outline-dark"> 16GB unified memory </button>
+                </div>
+                <br><br><br>
+                <h4>Storage</h4>
+                <!-- storage button -->
+                <div class="d-flex btn-group">
+                    <button id="gb256" class="marginRight my-2 my-2 btn btn-outline-dark">256GB SSD storage</button>
+                    <button id="gb512" class="marginRight my-2 my-2 btn btn-outline-dark">512GB SSD storage</button>
+                    <button id="tb1" class="marginRight my-2 my-2 btn btn-outline-dark">1TB SSD storage</button>
+                </div>
+                <br><br><br>
+                <!-- delivery option button -->
+                <h4>Choose your delivery option </h4>
+                <div class="d-flex btn-group" >
+                    <button  id="free" class="marginRight my-2 btn btn-outline-dark">Friday, Aug 25 Free Prime Delivery</button>
+                    <button id="charge" class="marginRight my-2 btn btn-outline-dark">Friday, Aug 21 Delivery charge $20</button>
+                </div>
+                <!-- price list  -->
+                <br><br><br><br>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th scope="row"> <b> Best Price </b> </th>
+                            <td> <b>$<span id="bestPrice">1299</span></b> </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Extra Memory cost</b></th>
+                            <td><b>$<span id="extraMemory">0</span></b></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Extra Storage Cost</b></th>
+                            <td> <b>$<span id="extraStorage">0</span></b> </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Delivery Charge</b></th>
+                            <td> <b>$<span id="deliveryCharge">0</span> </b> </td>
+                        </tr>
+                        <thead></thead> <!-- for last underline -->
+                        <tr>
+                            <th scope="row"><b>Total Price</b></th>
+                            <td> <b>$<span id="gTotal">1299</span></b> </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br>
+                <!-- pomo code -->
+                <h5>Add Pomo Code</h5>
+                <div>
+                    <input id="codeInput" type="text" class="marginRight my-2" placeholder=" reduce 20% off"> 
+                    <button id="apply" class="marginRight my-2 btn btn-success">Apply</button>  
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <h2 class="textCenter">Total: $<span id="finalTotal">1299</span></h2>
+    <br><br>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/macbook.js"></script>
+</body>
+</html>
